@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { links } from "@/lib/data";
-import { MotionDiv } from "./motion-div";
+import MotionDiv from "./motion-div";
 export default function Header() {
   //   const { activeSection, setActiveSection, setTimeOfLastClick } =
   //     useActiveSectionContext();
