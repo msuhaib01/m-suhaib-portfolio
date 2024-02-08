@@ -18,10 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-stone-100 text-stone-900 h-[5000px]`}
+        className={`${inter.className} bg-stone-900 text-stone-200 h-[5000px]`}
       >
-        <div className="absolute bg-[#fbbdff79] blur-[10rem] top-[-6rem] left-[4rem] h-[31.25rem] w-[31.25rem] rounded-full"></div>
-        <div className="absolute bg-[#ffecbf7d] blur-[10rem] top-[-6rem] right-[4rem] h-[31.25rem] w-[31.25rem] rounded-full"></div>
+        <div className="z-[-99] absolute ml-auto mr-auto left-0 right-0 w-full">
+          <div className="flex justify-center">
+            <div className="bg-[#31063479] blur-[5rem] top-[-6rem] h-[31.25rem] w-[31.25rem] rounded-full "></div>
+            <div className="bg-[#06223479] blur-[5rem] top-[-6rem] h-[31.25rem] w-[31.25rem] rounded-full "></div>
+          </div>
+        </div>
         <Header />
         {children}
       </body>
