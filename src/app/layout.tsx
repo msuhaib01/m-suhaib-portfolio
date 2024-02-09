@@ -28,8 +28,8 @@ export default function RootLayout({
       >
         <div className="z-[-99] absolute ml-auto mr-auto left-0 right-0 w-full">
           <div className="flex justify-center">
-            <div className="bg-[#31063479] blur-[5rem] top-[-6rem] h-[31.25rem] w-[31.25rem] rounded-full "></div>
-            <div className="bg-[#06223479] blur-[5rem] top-[-6rem] h-[31.25rem] w-[31.25rem] rounded-full "></div>
+            <div className="bg-[#8e309579] blur-[5rem] top-[-6rem] h-[34rem] w-[34rem] rounded-full "></div>
+            <div className="ml-[-70px] bg-[#35719679] blur-[5rem] top-[-6rem] h-[34rem] w-[34rem] rounded-full "></div>
           </div>
         </div>
         <Header />

@@ -8,24 +8,22 @@ export default function Header() {
   return (
     <header className="z-[99] relative">
       <MotionDiv
-        className="fixed top-0 sm:top-6 left-1/2 -translate-x-1/2 h-[6rem] sm:h-[3.25rem] w-full sm:w-[40rem] rounded-none  border-2 border-white border-opacity-40 bg-black bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem]"
+        className="fixed top-0 sm:top-6 left-1/2 -translate-x-1/2 h-[6rem] sm:h-[3.25rem] w-full sm:w-[40rem] rounded-sm  border-b-2 sm:border-2 border-stone-400 border-opacity-40 bg-[#000000] bg-opacity-55 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem]"
         initial={{ y: -100, x: "-50%", opacity: "0" }}
         animate={{ y: 0, x: "-50%", opacity: "1" }}
       ></MotionDiv>
-      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="h-12 flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-stone-200 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+      <nav className="flex fixed top-[0.6rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
+        <ul className="h-12 flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-stone-300 sm:w-[initial] sm:flex-nowrap sm:gap-5">
           {links.map((link) => (
             <MotionDiv
               initial={{ y: -100, opacity: "0" }}
               animate={{ y: 0, opacity: "1" }}
+              key={link.hash}
             >
-              <li
-                className="h-3/4 flex items-center justify-center relative"
-                key={link.hash}
-              >
+              <li className="h-3/4 flex items-center justify-center relative">
                 <Link
                   href={link.hash}
-                  className="flex w-full items-center justify-center px-3 hover:text-gray-400 text-xl sm:text-base"
+                  className="flex w-full items-center justify-center px-3 hover:text-white text-xl sm:text-base"
                 >
                   {link.name}
                 </Link>

@@ -8,12 +8,31 @@
   src: url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 } */
 
-.customfont {
+/* .customfont {
   font-family: var(--font-great-vibes);
+} */
+::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar */
 }
 
-.test {
-  width: 4;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4a4a4a; /* color of the scrollbar thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #666; /* color of the scrollbar thumb on hover */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* color of the scrollbar track */
+}
+
+/* Handle when it is dragging */
+::-webkit-scrollbar-thumb:active {
+  background: #999; /* color of the scrollbar thumb when dragging */
 }
 /* :root {
   --foreground-rgb: 0, 0, 0;
