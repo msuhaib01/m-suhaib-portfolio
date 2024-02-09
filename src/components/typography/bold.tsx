@@ -1,9 +1,9 @@
 import React from "react";
 
 type BoldProps = {
-  childern: React.ReactNode;
+  children: React.ReactNode;
 };
 
-export default function Bold({ childern }: BoldProps) {
-  return <span className="font-extrabold">{childern}</span>;
+export default function Bold({ children }: BoldProps) {
+  return <span className="font-extrabold">{children}</span>;
 }
