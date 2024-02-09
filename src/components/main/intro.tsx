@@ -59,10 +59,10 @@ export default function Intro() {
           delay: 0.2,
         }}
       >
-        <h1 className="text-stone-100 text-2xl sm:text-3xl !leading-[1.5]">
+        <h1 className="text-stone-100 text-2xl sm:text-3xl !leading-[1.5] m-4">
           <Bold>Hey there! I'm Suhaib.</Bold>
           <br />
-          I'm an <Bold>IBM Certified Fullstack Developer.</Bold>
+          I'm an <Bold>IBM™ Certified Fullstack Developer.</Bold>
           <br />I <Italic>build, innovate, and solve</Italic> business problems
           using <Underline>NextJS and React</Underline>.<br />
           <Italic className="text-lg sm:text-xl">
@@ -87,13 +87,13 @@ export default function Intro() {
         <div className="actions-bar flex flex-col gap-4">
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              className="justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-b-2 sm:border-2 border-stone-600 border-opacity-40 bg-stone-50 bg-opacity-90 text-stone-950 shadow-lg shadow-black/[0.5]"
+              className="justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-2 border-stone-600 border-opacity-40 bg-stone-50 bg-opacity-90 text-stone-950 shadow-lg shadow-black/[0.5]"
               href={`#contact`}
             >
               Contact me here <FaArrowRightLong />
             </Link>
             <Link
-              className="justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-b-2 sm:border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
+              className="justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
               href={`/cv.docx`}
               download={true}
             >
@@ -102,14 +102,14 @@ export default function Intro() {
             <a
               target="_blank"
               href={"https://nrays.dev"}
-              className="justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-b-2 sm:border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
+              className="justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
             >
               My Company's Site{" "}
               <Image
                 src={"/nrays_nobackground.png"}
                 alt="company logo"
-                height={30}
-                width={30}
+                height={15}
+                width={15}
               ></Image>
             </a>
           </div>
