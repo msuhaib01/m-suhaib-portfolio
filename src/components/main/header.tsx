@@ -23,7 +23,7 @@ export default function Header() {
               <li className="h-3/4 flex items-center justify-center relative">
                 <Link
                   href={link.hash}
-                  className="flex w-full items-center justify-center px-3 hover:text-white sm:text-base"
+                  className="transition ease-out flex w-full items-center justify-center px-3 hover:text-white sm:text-base"
                 >
                   {link.name}
                 </Link>

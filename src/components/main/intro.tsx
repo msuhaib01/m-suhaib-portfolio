@@ -9,7 +9,8 @@ import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaFileDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 import MotionDiv from "../global/motion-div";
-
+import nraysImage from "@/../public/nrays_nobackground.png";
+import myLogo from "@/../public/Tempest.jpg";
 export default function Intro() {
   return (
     <section className="max-w-[40rem] flex flex-col items-center justify-center text-center gap-5">
@@ -23,10 +24,8 @@ export default function Intro() {
           }}
         >
           <Image
-            src="/Tempest.jpg"
+            src={myLogo}
             alt="My Logo"
-            width={128}
-            height={128}
             priority={true}
             className="rounded-full size-32 border-4 border-stone-200"
           />
@@ -87,13 +86,13 @@ export default function Intro() {
         <div className="actions-bar flex flex-col gap-4">
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              className="justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-2 border-stone-600 border-opacity-40 bg-stone-50 bg-opacity-90 text-stone-950 shadow-lg shadow-black/[0.5]"
+              className="transition focus:scale-110 hover:scale-110 active:scale-105 justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-2 border-stone-600 border-opacity-40 bg-stone-50 bg-opacity-90 text-stone-950 shadow-lg shadow-black/[0.5]"
               href={`#contact`}
             >
               Contact me here <FaArrowRightLong />
             </Link>
             <Link
-              className="justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
+              className="transition focus:scale-110 hover:scale-110 active:scale-105 justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
               href={`/cv.docx`}
               download={true}
             >
@@ -102,14 +101,13 @@ export default function Intro() {
             <a
               target="_blank"
               href={"https://nrays.dev"}
-              className="justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
+              className="transition focus:scale-110 hover:scale-110 active:scale-105 justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
             >
               My Company's Site{" "}
               <Image
-                src={"/nrays_nobackground.png"}
+                className={"size-4"}
+                src={nraysImage}
                 alt="company logo"
-                height={15}
-                width={15}
               ></Image>
             </a>
           </div>
@@ -117,14 +115,14 @@ export default function Intro() {
             <a
               target="_blank"
               href={"https://nrays.dev"}
-              className="flex justify-center items-center rounded-full size-10 border-b-2 sm:border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
+              className="transition focus:scale-110 hover:scale-110 active:scale-105 flex justify-center items-center rounded-full size-10 border-b-2 sm:border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
             >
               <FaLinkedin />
             </a>
             <a
               target="_blank"
               href={"https://nrays.dev"}
-              className="flex justify-center items-center rounded-full size-10 border-b-2 sm:border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
+              className="transition focus:scale-110 hover:scale-110 active:scale-105 flex justify-center items-center rounded-full size-10 border-b-2 sm:border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
             >
               <FaGithub />
             </a>
