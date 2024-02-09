@@ -11,6 +11,17 @@
 /* .customfont {
   font-family: var(--font-great-vibes);
 } */
+.background {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(73, 0, 91, 0.3),
+      rgba(15, 0, 99, 0.3)
+    ),
+    url("/background_image.jpg");
+}
+* {
+  scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
   width: 10px; /* width of the scrollbar */
 }

@@ -22,14 +22,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={great_vibes.variable}>
+    <html lang="en" className={`${great_vibes.variable} !scroll-smooth`}>
       <body
         className={`${inter.className} bg-stone-900 text-stone-100 h-[5000px]`}
       >
         <div className="z-[-99] absolute ml-auto mr-auto left-0 right-0 w-full">
           <div className="flex justify-center">
             <div className="bg-[#8e309579] blur-[5rem] top-[-6rem] h-[34rem] w-[34rem] rounded-full "></div>
-            <div className="ml-[-70px] bg-[#35719679] blur-[5rem] top-[-6rem] h-[34rem] w-[34rem] rounded-full "></div>
+            <div className="ml-[-70px] bg-[#35379679] blur-[5rem] top-[-6rem] h-[34rem] w-[34rem] rounded-full "></div>
           </div>
         </div>
         <Header />
