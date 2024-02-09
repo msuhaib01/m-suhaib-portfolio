@@ -1,7 +1,20 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* @font-face {
+  font-family: "Great Vibes";
+  src: url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+} */
 
+.customfont {
+  font-family: var(--font-great-vibes);
+}
+
+.test {
+  width: 4;
+}
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
