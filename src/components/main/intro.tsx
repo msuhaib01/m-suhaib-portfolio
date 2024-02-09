@@ -2,6 +2,8 @@ import Image from "next/image";
 import React from "react";
 import { GiBottomRight3DArrow } from "react-icons/gi";
 import Bold from "../typography/bold";
+import Italic from "../typography/italic";
+import Underline from "../typography/underline";
 
 export default function Intro() {
   return (
@@ -24,11 +26,15 @@ export default function Intro() {
           my logo
         </p>
       </div>
-      <h1 className="text-stone-100 text-2xl sm:text-4xl">
-        <Bold>Hey there! I'm Suhaib.</Bold> Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Voluptatem laudantium saepe velit,
-        reiciendis voluptate a quia neque fugiat perspiciatis impedit, ratione
-        at tempore cumque sunt modi dolores repellendus facere aliquid?
+      <h1 className="text-stone-100 text-2xl sm:text-3xl">
+        <Bold>Hey there! I'm Suhaib.</Bold>
+        <br />
+        I'm an <Bold>IBM Certified Fullstack Developer.</Bold>
+        <br />I <Italic>build, innovate, and solve</Italic> business problems
+        using <Underline>NextJS and React</Underline>.<br />
+        <Italic className="text-xl">
+          (Along with any other tools I can get my hands on.)
+        </Italic>
       </h1>
     </section>
   );
