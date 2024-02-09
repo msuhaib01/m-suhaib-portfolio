@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { GiBottomRight3DArrow } from "react-icons/gi";
@@ -7,19 +8,29 @@ import Underline from "../typography/underline";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { FaFileDownload, FaGithub, FaLinkedin } from "react-icons/fa";
+import MotionDiv from "../global/motion-div";
 
 export default function Intro() {
   return (
     <section className="max-w-[40rem] flex flex-col items-center justify-center text-center gap-5">
       <div className="image relative">
-        <Image
-          src="/Tempest.jpg"
-          alt="My Logo"
-          width={128}
-          height={128}
-          priority={true}
-          className="rounded-full size-32 border-4 border-stone-200"
-        />
+        <MotionDiv
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "tween",
+            duration: 0.2,
+          }}
+        >
+          <Image
+            src="/Tempest.jpg"
+            alt="My Logo"
+            width={128}
+            height={128}
+            priority={true}
+            className="rounded-full size-32 border-4 border-stone-200"
+          />
+        </MotionDiv>
         <div className="absolute rotate-180 right-[-24px] bottom-[16px]">
           <GiBottomRight3DArrow className="size-5"></GiBottomRight3DArrow>
         </div>
