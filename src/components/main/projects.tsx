@@ -4,8 +4,11 @@ import Image from "next/image";
 import ScrollShrinker from "../global/scroll-shrinker";
 export default function Projects() {
   return (
-    <section id={"projects"} className="max-w-[48rem] flex flex-col">
-      <h2 className="font-bold text-2xl text-center mb-4 mt-24">Projects</h2>
+    <section
+      id={"projects"}
+      className="max-w-[48rem] flex flex-col scroll-mt-24"
+    >
+      <h2 className="font-bold text-4xl text-center mb-4 mt-4 ">Projects</h2>
       <div className="flex flex-col gap-12 p-8">
         {projectsData.map((project, index) => (
           <ScrollShrinker key={project.title} className="group">
