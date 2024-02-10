@@ -101,7 +101,7 @@ export default function Intro() {
             >
               Download my CV <FaFileDownload />
             </Link>
-            <a
+            {/* <a
               target="_blank"
               href={"https://nrays.dev"}
               className="transition focus:scale-110 hover:scale-110 active:scale-105 justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
@@ -112,7 +112,7 @@ export default function Intro() {
                 src={nraysImage}
                 alt="company logo"
               ></Image>
-            </a>
+            </a> */}
           </div>
           <div className="flex gap-4 justify-center">
             <a
