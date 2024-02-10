@@ -1,9 +1,13 @@
+"use client";
 import Link from "next/link";
 import { links } from "@/lib/data";
 import MotionDiv from "../global/motion-div";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import clsx from "clsx";
+import { motion } from "framer-motion";
 export default function Header() {
   //   const { activeSection, setActiveSection, setTimeOfLastClick } =
-  //     useActiveSectionContext();
+  const { activeSection, setActiveSection } = useActiveSectionContext();
 
   return (
     <header className="z-[99] relative">
@@ -13,7 +17,7 @@ export default function Header() {
         animate={{ y: 0, x: "-50%", opacity: "1" }}
       ></MotionDiv>
       <nav className="flex fixed top-[1.2rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="h-12 flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-stone-300 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+        <ul className="h-12 flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-stone-400 sm:w-[initial] sm:flex-nowrap sm:gap-5">
           {links.map((link) => (
             <MotionDiv
               initial={{ y: -100, opacity: "0" }}
@@ -23,9 +27,22 @@ export default function Header() {
               <li className="h-3/4 flex items-center justify-center relative">
                 <Link
                   href={link.hash}
-                  className="transition ease-out flex w-full items-center justify-center px-3 hover:text-white sm:text-base"
+                  className={clsx(
+                    "transition ease-out flex w-full items-center justify-center px-3 hover:text-white sm:text-base",
+                    { "text-white": activeSection == link.name }
+                  )}
+                  onClick={() => {
+                    setActiveSection(link.name);
+                  }}
                 >
                   {link.name}
+
+                  {activeSection == link.name && (
+                    <motion.span
+                      layoutId="activeSection"
+                      className="bg-gray-700/50 p-[12px] rounded-sm absolute inset-0 -z-10"
+                    />
+                  )}
                 </Link>
               </li>
             </MotionDiv>

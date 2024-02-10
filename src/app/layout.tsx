@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/main/header";
 import { Great_Vibes } from "next/font/google";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 
 const great_vibes = Great_Vibes({
   weight: "400",
@@ -32,8 +33,10 @@ export default function RootLayout({
             <div className="ml-[-70px] bg-[#35379679] blur-[5rem] top-[-6rem] h-[34rem] w-[34rem] rounded-full "></div>
           </div>
         </div>
-        <Header />
-        {children}
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );
