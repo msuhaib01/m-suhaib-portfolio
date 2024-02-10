@@ -9,7 +9,7 @@ export default function About() {
       className="background w-full flex justify-center items-center bg-fixed bg-cover py-48"
     >
       <MotionDiv>
-        <div className="rounded-sm max-w-[40rem] p-16 bg-[#000000b0] backdrop-blur-md shadow-xl shadow-black flex flex-col gap-3">
+        <div className="rounded-sm max-w-[44rem] p-16 bg-[#000000b0] backdrop-blur-md shadow-xl shadow-black flex flex-col gap-3">
           <h2 className="text-center font-bold text-2xl">About Me</h2>
           <p className="text-justify">
             I spent near a decade living in New York City, picked up quite the
