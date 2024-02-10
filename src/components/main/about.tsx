@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import MotionDiv from "../global/motion-div";
+import ScrollShrinker from "../global/scroll-shrinker";
 
 export default function About() {
   return (
@@ -8,7 +8,7 @@ export default function About() {
       id={"about"}
       className="background w-full flex justify-center items-center bg-fixed bg-cover py-48"
     >
-      <MotionDiv>
+      <ScrollShrinker>
         <div className="rounded-sm max-w-[44rem] p-16 bg-[#000000b0] backdrop-blur-md shadow-xl shadow-black flex flex-col gap-3">
           <h2 className="text-center font-bold text-2xl">About Me</h2>
           <p className="text-justify">
@@ -24,7 +24,7 @@ export default function About() {
             React.
           </p>
         </div>
-      </MotionDiv>
+      </ScrollShrinker>
     </section>
   );
 }

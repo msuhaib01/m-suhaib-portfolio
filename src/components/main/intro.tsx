@@ -15,7 +15,7 @@ export default function Intro() {
   return (
     <section
       id={"home"}
-      className="max-w-[40rem] flex flex-col items-center justify-center text-center gap-5"
+      className="max-w-[40rem] flex flex-col items-center justify-center text-center gap-5 scroll-m-[300px]"
     >
       <div className="image relative">
         <MotionDiv
