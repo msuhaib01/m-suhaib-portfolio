@@ -13,7 +13,10 @@ import nraysImage from "@/../public/nrays_nobackground.png";
 import myLogo from "@/../public/Tempest.jpg";
 export default function Intro() {
   return (
-    <section className="max-w-[40rem] flex flex-col items-center justify-center text-center gap-5">
+    <section
+      id={"home"}
+      className="max-w-[40rem] flex flex-col items-center justify-center text-center gap-5"
+    >
       <div className="image relative">
         <MotionDiv
           initial={{ opacity: 0, scale: 0 }}

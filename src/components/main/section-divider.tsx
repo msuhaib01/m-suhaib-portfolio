@@ -1,9 +1,13 @@
 import React from "react";
 import MotionDiv from "../global/motion-div";
 
-export default function SectionDivider() {
+type SectionDividerProps = {
+  id?: string;
+};
+
+export default function SectionDivider({ id }: SectionDividerProps) {
   return (
-    <div className="flex gap-32">
+    <div id={id} className="flex gap-32">
       <MotionDiv
         className="bg-stone-200 h-24 w-1 rounded-full hidden sm:block dark:bg-opacity-15"
         initial={{ opacity: 0, y: 100 }}

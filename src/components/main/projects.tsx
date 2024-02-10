@@ -4,7 +4,7 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 export default function Projects() {
   return (
-    <section className="max-w-[44rem] flex flex-col">
+    <section className="max-w-[48rem] flex flex-col">
       <h2 className="font-bold text-2xl text-center mb-4">Projects</h2>
       <div className="flex flex-col gap-12 p-8">
         {projectsData.map((project, index) => (
