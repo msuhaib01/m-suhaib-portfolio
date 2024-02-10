@@ -7,7 +7,8 @@ import clsx from "clsx";
 import { motion } from "framer-motion";
 export default function Header() {
   //   const { activeSection, setActiveSection, setTimeOfLastClick } =
-  const { activeSection, setActiveSection } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeLastClicked } =
+    useActiveSectionContext();
 
   return (
     <header className="z-[99] relative">
@@ -33,6 +34,7 @@ export default function Header() {
                   )}
                   onClick={() => {
                     setActiveSection(link.name);
+                    setTimeLastClicked(Date.now());
                   }}
                 >
                   {link.name}

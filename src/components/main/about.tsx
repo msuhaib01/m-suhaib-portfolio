@@ -1,10 +1,13 @@
-import Image from "next/image";
-import React from "react";
+"use client";
+import React, { useContext, useEffect } from "react";
 import ScrollShrinker from "../global/scroll-shrinker";
+import { useNavBarScrollEffect } from "@/lib/hooks";
 
 export default function About() {
+  const ref = useNavBarScrollEffect("About", 0.5);
   return (
     <section
+      ref={ref}
       id={"about"}
       className="background w-full flex justify-center items-center bg-fixed bg-cover py-48"
     >

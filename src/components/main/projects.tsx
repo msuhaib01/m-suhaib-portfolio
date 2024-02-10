@@ -1,10 +1,15 @@
+"use client";
 import React from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import ScrollShrinker from "../global/scroll-shrinker";
+import { useNavBarScrollEffect } from "@/lib/hooks";
 export default function Projects() {
+  const ref = useNavBarScrollEffect("Projects", 0.2);
+
   return (
     <section
+      ref={ref}
       id={"projects"}
       className="max-w-[48rem] flex flex-col scroll-mt-24"
     >

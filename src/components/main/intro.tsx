@@ -11,9 +11,13 @@ import { FaFileDownload, FaGithub, FaLinkedin } from "react-icons/fa";
 import MotionDiv from "../global/motion-div";
 import nraysImage from "@/../public/nrays_nobackground.png";
 import myLogo from "@/../public/Tempest.jpg";
+import { useNavBarScrollEffect } from "@/lib/hooks";
 export default function Intro() {
+  const ref = useNavBarScrollEffect("Home", 0.5);
+
   return (
     <section
+      ref={ref}
       id={"home"}
       className="max-w-[40rem] flex flex-col items-center justify-center text-center gap-5 scroll-m-[300px]"
     >
