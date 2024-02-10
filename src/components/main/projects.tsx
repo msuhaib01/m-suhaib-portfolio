@@ -30,7 +30,7 @@ export default function Projects() {
               <Image
                 alt={project.title}
                 src={project.imageUrl}
-                className="sm:absolute sm:right-[-330px] sm:top-[30px] sm:w-[600px] group-even:sm:left-[-330px] shadow-2xl shadow-black transition group-hover:scale-105 group-hover:-rotate-2 group-hover:-translate-x-5 group-even:group-hover:rotate-2 group-even:group-hover:translate-x-5 "
+                className="sm:absolute sm:right-[-330px] sm:top-[30px] sm:w-[600px] group-even:sm:left-[-330px] shadow-2xl shadow-black transition group-hover:scale-105 sm:group-hover:-rotate-2 sm:group-hover:-translate-x-5 sm:group-even:group-hover:rotate-2 sm:group-even:group-hover:translate-x-5 "
               />
             </div>
           </section>
