@@ -16,7 +16,7 @@ export default function Experience() {
       className="max-w-[65rem] scroll-m-24 gap-6 mx-8"
       id={"experience"}
     >
-      <h2 className="font-bold text-4xl text-center mb-4 mt-4 text-nowrap">
+      <h2 className="font-bold text-4xl text-center mb-4 mt-4 leading-[3rem]">
         Experience, Education, and Certifications
       </h2>
       {/* remove animate false when doing final build */}

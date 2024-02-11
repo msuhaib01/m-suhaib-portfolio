@@ -59,7 +59,7 @@ export const experiencesData = [
     description:
       "I freelance on upwork and have so far done projects inexcess of $100+. I focus on Fullstack application development using NextJS and React.",
     icon: React.createElement(SiUpwork),
-    date: "2023 Jan - Current",
+    date: "2023 Oct - Current",
   },
   {
     title: "IBM Full Stack Software Developer - Professional Certification",
@@ -67,7 +67,7 @@ export const experiencesData = [
     description:
       "I completed the IBM Full Stack Software Developer Professional Certification, a 12 course long online certification program that is recommended to take from 3 to 4 months to complete. Built multiple fullstack projects and learned all the critical information required to develop applications.",
     icon: React.createElement(SiIbm),
-    date: "2023 Jan - Current",
+    date: "",
   },
   {
     title:
@@ -76,7 +76,7 @@ export const experiencesData = [
     description:
       "I worked as a team lead incharge of 2 other web developers to maintain, analyze and code both on existing legacy code base and a new site for the event. Designed the website in Figma and then statically generated it.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023",
+    date: "2023 Oct - 2024 Jan",
   },
   {
     title: "Executive Web and IT - NUST Orientation (Frontend)",
@@ -84,7 +84,7 @@ export const experiencesData = [
     description:
       "Worked on a team to build the NUST Orientation website using NextJS. Styled and built many components and pages on the frontend.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023",
+    date: "2023 Jul - 2023 Sept 2023",
   },
 ] as const;
 
