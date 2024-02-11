@@ -1,4 +1,6 @@
 "use client";
+import { MotionGlobalConfig } from "framer-motion";
+
 import { createContext, useContext, useState } from "react";
 import type { HeaderNames } from "../lib/types";
 type ActiveSectionContextType = {
@@ -18,6 +20,10 @@ type ActiveSectionContextProviderType = {
 export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderType) {
+  if (typeof window !== "undefined") {
+    MotionGlobalConfig.skipAnimations = window.innerWidth < 640;
+  }
+
   const [activeSection, setActiveSection] = useState<HeaderNames>("Home");
   const [timeLastClicked, setTimeLastClicked] = useState(Date.now());
   return (
