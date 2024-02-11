@@ -17,15 +17,14 @@ export default function About() {
           <h2 className="text-center font-bold text-2xl">About Me</h2>
           <p className="text-justify">
             I spent near a decade living in New York City, picked up quite the
-            accent. I've always been interested in computers, from the old days
-            when I had a rig with 2gb ram and a Intel Core Duo, to playing
-            Minecraft at the lowest settings possible off a USB drive on my
-            local library PC.
+            accent. I've always been interested in computers and solving
+            problems, figuring out how to play games like Worms or CS1.6 at the
+            lowest settings possible off a USB drive on my local library PC.
           </p>
           <p className="text-justify">
-            Now I'm a Software Engineer for real (And a freelancer!) and I've
-            build many fullstack applications using NextJS, Typescript, and
-            React.
+            Now I'm a Software Engineer and though the methods may be different,
+            I still solve problems. Web Design problems, business problems,
+            problems problems. I'm here to help you with problems.
           </p>
         </div>
       </ScrollShrinker>
