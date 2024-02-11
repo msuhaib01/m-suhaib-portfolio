@@ -20,7 +20,7 @@ export default function Experience() {
         Experience, Education, and Certifications
       </h2>
       {/* remove animate false when doing final build */}
-      <VerticalTimeline animate={false} lineColor="">
+      <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
