@@ -18,6 +18,10 @@ export default function MySkills() {
     }),
   };
   const ref = useNavBarScrollEffect("Skills", 0.75);
+  let isMobile: boolean = true;
+  if (typeof window !== "undefined") {
+    isMobile = window.innerWidth < 640;
+  }
 
   return (
     <section
@@ -34,8 +38,8 @@ export default function MySkills() {
             className="py-2 px-4 bg-stone-100/75 text-stone-900 font-semibold rounded-lg border-stone-900/50 shadow-2xl shadow-black"
             key={data + "hi"}
             variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
+            initial={isMobile ? "" : "initial"}
+            whileInView={isMobile ? "" : "animate"}
             viewport={{
               once: true,
             }}
