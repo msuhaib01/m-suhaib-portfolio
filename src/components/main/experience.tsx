@@ -17,7 +17,7 @@ export default function Experience() {
       id={"experience"}
     >
       <h2 className="font-bold text-4xl text-center mb-4 mt-4 text-nowrap">
-        My Experience
+        Experience, Education, and Certifications
       </h2>
       {/* remove animate false when doing final build */}
       <VerticalTimeline animate={false} lineColor="">

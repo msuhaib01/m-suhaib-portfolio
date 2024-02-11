@@ -6,6 +6,7 @@ import vibesImg from "@/../public/vibes.png";
 import traccImg from "@/../public/tracc.png";
 import realifyImg from "@/../public/realify.png";
 import espaceImg from "@/../public/espace.png";
+import { SiIbm, SiUpwork } from "react-icons/si";
 
 export const links = [
   {
@@ -36,28 +37,53 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "BS CS - National University of Science and Technology ",
+    location: "Islamabad, PK",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "I will graduate from NUST with a bachelor's of Computer Science , the highest ranking and hardest to get into Engineering and Technology University in all of Pakistan.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2021 - 2025",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "President - N-Rays International",
+    location: "Islamabad, PK",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "I run my own Software Development Agency as it's president. I'm in charge of software development, client acquisition, and all other core business functions. Increased total revenues from 0 to 240,000Rs. I've built multiple fullstack projects for clients using NextJS, and also SPA React.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "2023 Jan - Current",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Upwork - Freelancer",
+    location: "Islamabad, PK",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I freelance on upwork and have so far done projects inexcess of $100+. I focus on Fullstack application development using NextJS and React.",
+    icon: React.createElement(SiUpwork),
+    date: "2023 Jan - Current",
+  },
+  {
+    title: "IBM Full Stack Software Developer - Professional Certification",
+    location: "Islamabad, PK",
+    description:
+      "I completed the IBM Full Stack Software Developer Professional Certification, a 12 course long online certification program that is recommended to take from 3 to 4 months to complete. Built multiple fullstack projects and learned all the critical information required to develop applications.",
+    icon: React.createElement(SiIbm),
+    date: "2023 Jan - Current",
+  },
+  {
+    title:
+      "Director Web and IT - NUST Research, Innovation & Commercialisation Alumni Homecoming (Fullstack)",
+    location: "Islamabad, PK",
+    description:
+      "I worked as a team lead incharge of 2 other web developers to maintain, analyze and code both on existing legacy code base and a new site for the event. Designed the website in Figma and then statically generated it.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023",
+  },
+  {
+    title: "Executive Web and IT - NUST Orientation (Frontend)",
+    location: "Islamabad, PK",
+    description:
+      "Worked on a team to build the NUST Orientation website using NextJS. Styled and built many components and pages on the frontend.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023",
   },
 ] as const;
 
@@ -105,6 +131,7 @@ export const skillsData = [
   "Prisma",
   "MongoDB",
   "Redux",
+  "RTK Query",
   "GraphQL",
   "Apollo",
   "Express",
@@ -112,4 +139,5 @@ export const skillsData = [
   "Python",
   "Django",
   "Framer Motion",
+  "Go",
 ] as const;
