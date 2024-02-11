@@ -11,7 +11,7 @@ export default function About() {
       id={"about"}
       className="relative w-[100vw] h-[700px] flex justify-center items-center"
     >
-      <div className="absolute z-[-1] top-0 left-0 background flex justify-center items-center bg-fixed bg-cover bg-center w-[100vw] h-[700px]"></div>
+      <div className="absolute z-[-1] top-0 left-0 background flex justify-center items-center bg-scroll sm:bg-fixed bg-cover bg-center w-[100vw] h-[700px]"></div>
       <ScrollShrinker>
         <div className="rounded-sm max-w-[44rem] p-16 bg-[#000000b0] backdrop-blur-md shadow-xl shadow-black flex flex-col gap-3">
           <h2 className="text-center font-bold text-2xl">About Me</h2>
