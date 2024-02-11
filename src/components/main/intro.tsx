@@ -12,8 +12,11 @@ import MotionDiv from "../global/motion-div";
 import nraysImage from "@/../public/nrays_nobackground.png";
 import myLogo from "@/../public/Tempest.jpg";
 import { useNavBarScrollEffect } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 export default function Intro() {
   const ref = useNavBarScrollEffect("Home", 0.5);
+  const { activeSection, setActiveSection, setTimeLastClicked } =
+    useActiveSectionContext();
 
   return (
     <section
@@ -95,6 +98,10 @@ export default function Intro() {
             <Link
               className="transition focus:scale-110 hover:scale-110 active:scale-105 justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-2 border-stone-600 border-opacity-40 bg-stone-50 bg-opacity-90 text-stone-950 shadow-lg shadow-black/[0.5]"
               href={`#contact`}
+              onClick={() => {
+                setActiveSection("Contact");
+                setTimeLastClicked(Date.now());
+              }}
             >
               Contact me here <FaArrowRightLong />
             </Link>
@@ -121,14 +128,14 @@ export default function Intro() {
           <div className="flex gap-4 justify-center">
             <a
               target="_blank"
-              href={"https://nrays.dev"}
+              href={"https://www.linkedin.com/in/muhammad-suhaib-925620274/"}
               className="transition focus:scale-110 hover:scale-110 active:scale-105 flex justify-center items-center rounded-full size-10 border-b-2 sm:border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
             >
               <FaLinkedin />
             </a>
             <a
               target="_blank"
-              href={"https://nrays.dev"}
+              href={"https://github.com/msuhaib01"}
               className="transition focus:scale-110 hover:scale-110 active:scale-105 flex justify-center items-center rounded-full size-10 border-b-2 sm:border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
             >
               <FaGithub />
