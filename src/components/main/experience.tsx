@@ -11,7 +11,11 @@ import { experiencesData } from "@/lib/data";
 export default function Experience() {
   const ref = useNavBarScrollEffect("Experience", 0.5);
   return (
-    <section className="max-w-[65rem] scroll-m-24 gap-6 mx-8" id={"experience"}>
+    <section
+      ref={ref}
+      className="max-w-[65rem] scroll-m-24 gap-6 mx-8"
+      id={"experience"}
+    >
       <h2 className="font-bold text-4xl text-center mb-4 mt-4 text-nowrap">
         My Experience
       </h2>
@@ -39,7 +43,7 @@ export default function Experience() {
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className="!mt-1 !font-normal text-white/75">
                 {item.description}
               </p>
             </VerticalTimelineElement>
