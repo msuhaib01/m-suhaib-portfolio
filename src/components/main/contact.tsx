@@ -52,6 +52,7 @@ export default function Contact() {
           messageRef.current.value = "";
           buttonRef.current.innerHTML = temp;
           buttonRef.current.disabled = false;
+          //forcing restart
         }}
       >
         <input
