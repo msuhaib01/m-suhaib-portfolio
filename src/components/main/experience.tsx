@@ -9,7 +9,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { experiencesData } from "@/lib/data";
 export default function Experience() {
-  const ref = useNavBarScrollEffect("Experience", 0.5);
+  const ref = useNavBarScrollEffect("Experience", 0.2);
   return (
     <section
       ref={ref}
