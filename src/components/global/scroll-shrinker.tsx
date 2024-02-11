@@ -18,7 +18,7 @@ export default function ScrollShrinker({
   const shrinkRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: shrinkRef,
-    offset: ["0 1", "1.25 1"],
+    offset: ["0 1", "0.75 1"],
     // "target window" "target window"
     // 0 means start/top
     // 1 means end/bottom

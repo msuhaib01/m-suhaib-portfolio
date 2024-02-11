@@ -9,7 +9,7 @@ export default function About() {
     <section
       ref={ref}
       id={"about"}
-      className="background w-full flex justify-center items-center bg-fixed bg-cover py-48"
+      className="background flex justify-center items-center bg-fixed bg-cover w-[100vw] h-[1000px]"
     >
       <ScrollShrinker>
         <div className="rounded-sm max-w-[44rem] p-16 bg-[#000000b0] backdrop-blur-md shadow-xl shadow-black flex flex-col gap-3">
