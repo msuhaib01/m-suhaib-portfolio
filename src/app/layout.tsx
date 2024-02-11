@@ -5,6 +5,7 @@ import Header from "@/components/main/header";
 import { Great_Vibes } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import { Toaster } from "react-hot-toast";
+import Footer from "@/components/main/footer";
 const great_vibes = Great_Vibes({
   weight: "400",
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Toaster position="bottom-right" />
+          <Footer />
         </ActiveSectionContextProvider>
       </body>
     </html>

@@ -67,7 +67,7 @@ export default function Contact() {
         {/* name is what is used to get the data from response object */}
         <textarea
           ref={messageRef}
-          className="font-semibold h-40 p-4 rounded-sm borderBlack bg-white bg-opacity-80 focus:scale-[1.01] focus:bg-opacity-100 transition-all outline-none text-stone-900"
+          className="font-semibold h-72 p-4 rounded-sm borderBlack bg-white bg-opacity-80 focus:scale-[1.01] focus:bg-opacity-100 transition-all outline-none text-stone-900"
           placeholder="Your Message."
           required={true}
           maxLength={1000}
