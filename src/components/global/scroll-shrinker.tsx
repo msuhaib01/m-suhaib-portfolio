@@ -29,8 +29,21 @@ export default function ScrollShrinker({
 
     //think through logically for any other possible wanted combination.
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-  const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+  let isMobile: boolean = true;
+  if (typeof window !== "undefined") {
+    isMobile = window.innerWidth < 640;
+  }
+
+  const scaleProgess = useTransform(
+    scrollYProgress,
+    [0, 1],
+    isMobile ? [1, 1] : [0.8, 1]
+  );
+  const opacityProgess = useTransform(
+    scrollYProgress,
+    [0, 1],
+    isMobile ? [1, 1] : [0.5, 1]
+  );
 
   return (
     <motion.div
