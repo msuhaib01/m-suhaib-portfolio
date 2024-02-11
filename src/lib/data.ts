@@ -6,6 +6,7 @@ import vibesImg from "@/../public/vibes.png";
 import traccImg from "@/../public/tracc.png";
 import realifyImg from "@/../public/realify.png";
 import espaceImg from "@/../public/espace.png";
+import cybernetImg from "@/../public/cybernet.png";
 import { SiIbm, SiUpwork } from "react-icons/si";
 
 export const links = [
@@ -89,32 +90,39 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "ESpace",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: traccImg,
+      "Fullstack property management website with a custom integrated CMS built using NextJS, Tailwind and Firebase. There is a full functional search feature, admin panel and image uploading.",
+    tags: ["Paid Project", "React", "Next.js", "Tailwind", "Firebase"],
+    imageUrl: espaceImg,
   },
   {
-    title: "rmtDev",
+    title: "CyberNet",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Built the highly reactive frontend dashboard for a cyber security company on contract. Integrating both English and French support",
+    tags: ["Paid Project", "React", "Redux", "Tailwind", "Chart.js"],
+    imageUrl: cybernetImg,
+  },
+  {
+    title: "Vibes",
+    description:
+      "Built a React front end that takes a users picture and then uses a machine learning model we trained to detect the users emotion to recommend a song.",
+    tags: ["Ai Project", "TypeScript", "React", "Python", "Flask"],
     imageUrl: vibesImg,
   },
   {
     title: "Word Analytics",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Built a web app to detect AI generated text using React for frontend and Flask, Google Colab for hosting and Google Drive for file posting, uses my very own CURSED stack.",
+    tags: [
+      "Ai Project",
+      "TypeScript",
+      "React",
+      "Python",
+      "Flask",
+      "C.U.R.S.E.D",
+    ],
     imageUrl: realifyImg,
-  },
-  {
-    title: "Word Analyticse",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: espaceImg,
   },
 ] as const;
 
@@ -128,16 +136,18 @@ export const skillsData = [
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
+  // "Prisma",
+  "Firebase",
   "MongoDB",
   "Redux",
   "RTK Query",
-  "GraphQL",
-  "Apollo",
+  // "GraphQL",
+  // "Apollo",
   "Express",
   "PostgreSQL",
   "Python",
   "Django",
+  "Flask",
   "Framer Motion",
   "Go",
 ] as const;

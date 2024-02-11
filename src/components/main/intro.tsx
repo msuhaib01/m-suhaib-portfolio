@@ -73,7 +73,7 @@ export default function Intro() {
           <br />
           I'm an <Bold>IBM™ Certified Fullstack Developer.</Bold>
           <br />I <Italic>build, innovate, and solve</Italic> business problems
-          using <Underline>NextJS and React</Underline>.<br />
+          using <Underline>AI, NextJS, and React</Underline>.<br />
           <Italic className="text-lg sm:text-xl">
             (Along with any other tools I can{" "}
             <span className="text-nowrap">get my hands-on.</span>)
