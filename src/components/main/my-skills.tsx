@@ -23,16 +23,16 @@ export default function MySkills() {
     <section
       id={"skills"}
       ref={ref}
-      className="flex flex-col max-w-[36rem] scroll-m-24 gap-6"
+      className="flex flex-col max-w-[36rem] scroll-m-24 gap-6 mx-8"
     >
       <h2 className="font-bold text-4xl text-center mb-4 mt-4 text-nowrap">
         My Skills
       </h2>
-      <ul className="flex flex-row gap-6 flex-wrap">
+      <ul className="flex flex-row gap-6 flex-wrap justify-center">
         {skillsData.map((data, index) => (
           <motion.li
             className="py-2 px-4 bg-stone-100/75 text-stone-900 font-semibold rounded-lg border-stone-900/50 shadow-2xl shadow-black"
-            key={data}
+            key={data + "hi"}
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"

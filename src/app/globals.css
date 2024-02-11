@@ -11,6 +11,10 @@
 /* .customfont {
   font-family: var(--font-great-vibes);
 } */
+html {
+  --line-color: rgba(55, 55, 55, 0.562);
+}
+
 .background {
   background-image: linear-gradient(
       to bottom,
