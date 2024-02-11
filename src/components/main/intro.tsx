@@ -107,7 +107,7 @@ export default function Intro() {
             </Link>
             <Link
               className="transition focus:scale-110 hover:scale-110 active:scale-105 justify-between flex items-center gap-2 py-2 px-4 rounded-sm  border-2 border-stone-600 border-opacity-40 bg-stone-900 bg-opacity-90 text-stone-50 shadow-lg shadow-black/[0.5]"
-              href={`/cv.docx`}
+              href={`/MSuhaibCV.docx`}
               download={true}
             >
               Download my CV <FaFileDownload />
