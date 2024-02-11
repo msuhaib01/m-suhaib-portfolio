@@ -39,7 +39,13 @@ export default function MySkills() {
             viewport={{
               once: true,
             }}
-            custom={index}
+            custom={() => {
+              if (typeof window !== "undefined") {
+                if (window.innerWidth < 640) {
+                  return 0;
+                } else return index;
+              }
+            }}
           >
             {data}
           </motion.li>
