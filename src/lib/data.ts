@@ -41,7 +41,7 @@ export const experiencesData = [
     title: "BS CS - National University of Science and Technology ",
     location: "Islamabad, PK",
     description:
-      "I will graduate from NUST with a bachelor's of Computer Science , the highest ranking and hardest to get into Engineering and Technology University in all of Pakistan.",
+      "I will graduate from the highest ranking and hardest to get into Engineering and Technology University in all of Pakistan with a bachelor's of Computer Science.",
     icon: React.createElement(LuGraduationCap),
     date: "2021 - 2025",
   },
@@ -96,13 +96,13 @@ export const projectsData = [
     tags: ["Paid Project", "React", "Next.js", "Tailwind", "Firebase"],
     imageUrl: espaceImg,
   },
-  {
-    title: "CyberNet",
-    description:
-      "Built the highly reactive frontend dashboard for a cyber security company on contract. Integrating both English and French support",
-    tags: ["Paid Project", "React", "Redux", "Tailwind", "Chart.js"],
-    imageUrl: cybernetImg,
-  },
+  // {
+  //   title: "CyberNet",
+  //   description:
+  //     "Built the highly reactive frontend dashboard for a cyber security company on contract. Integrating both English and French support",
+  //   tags: ["Paid Project", "React", "Redux", "Tailwind", "Chart.js"],
+  //   imageUrl: cybernetImg,
+  // },
   {
     title: "Vibes",
     description:
