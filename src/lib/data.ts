@@ -96,13 +96,13 @@ export const projectsData = [
     tags: ["Paid Project", "React", "Next.js", "Tailwind", "Firebase"],
     imageUrl: espaceImg,
   },
-  // {
-  //   title: "CyberNet",
-  //   description:
-  //     "Built the highly reactive frontend dashboard for a cyber security company on contract. Integrating both English and French support",
-  //   tags: ["Paid Project", "React", "Redux", "Tailwind", "Chart.js"],
-  //   imageUrl: cybernetImg,
-  // },
+  {
+    title: "CyberNet",
+    description:
+      "Built the highly reactive frontend dashboard for a cyber security company on contract. Integrating both English and French support",
+    tags: ["Paid Project", "React", "Redux", "Tailwind", "Chart.js"],
+    imageUrl: cybernetImg,
+  },
   {
     title: "Vibes",
     description:
