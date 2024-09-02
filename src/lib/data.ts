@@ -67,7 +67,7 @@ export const experiencesData = [
     location: "London, UK",
     description:
       "BlackSky Internation is a Cloud and IT Services provider for Enterprises based out of 128 City Road, London, EC1V 2NX.	We provide full stack software development, cloud management, infrastructure management, and DevOps IT Solutions to B2B Clients.",
-    icon: React.createElement(SiUpwork),
+    icon: React.createElement(CgWorkAlt),
     date: "2023 Oct - Current",
   },
 
@@ -84,7 +84,7 @@ export const experiencesData = [
     location: "Islamabad, PK",
     description:
       "Cracked passwords and suggested security improvements as a Governance Analyst at Goldman Sachs.",
-    icon: React.createElement(SiUpwork),
+    icon: React.createElement(CgWorkAlt),
     date: "2023 July - 2024 June",
   },
   {
