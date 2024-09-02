@@ -46,23 +46,57 @@ export const experiencesData = [
     date: "2021 - 2025",
   },
   {
-    title: "President - N-Rays International",
+    title: "Stanford Machine Learning - Professional Certification ",
     location: "Islamabad, PK",
     description:
-      "I run my own Software Development Agency as it's president. I'm in charge of software development, client acquisition, and all other core business functions. Increased total revenues from 0 to 240,000Rs. I've built multiple fullstack projects for clients using NextJS, and also SPA React.",
+      "In this Professional Certificate, learners developed and built multiple supervised and unsupervised machine learning algorithms using best industry practices.",
+    icon: React.createElement(LuGraduationCap),
+    date: "",
+  },
+
+  {
+    title: "Software Engineer - N-Rays International",
+    location: "Islamabad, PK",
+    description:
+      "I work at N-Rays International which is a Software Development Agency. I'm in charge of software development, cloud development and solutions archtecture. I've built multiple fullstack projects for clients using NextJS, and also SPA React.",
     icon: React.createElement(CgWorkAlt),
     date: "2023 Jan - Current",
   },
   {
+    title: "Founder - BlackSky International",
+    location: "London, UK",
+    description:
+      "BlackSky Internation is a Cloud and IT Services provider for Enterprises based out of 128 City Road, London, EC1V 2NX.	We provide full stack software development, cloud management, infrastructure management, and DevOps IT Solutions to B2B Clients.",
+    icon: React.createElement(SiUpwork),
+    date: "2023 Oct - Current",
+  },
+
+  {
     title: "Upwork - Freelancer",
     location: "Islamabad, PK",
     description:
-      "I freelance on upwork and have so far done projects inexcess of $100+. I focus on Fullstack application development using NextJS and React.",
+      "I freelance on upwork and have so far done projects inexcess of $200+. I focus on Fullstack application development and Cloud Solutions Architecture.",
     icon: React.createElement(SiUpwork),
     date: "2023 Oct - Current",
   },
   {
+    title: "Goldman Sachs - Software Engineering - Virtual Work Experience",
+    location: "Islamabad, PK",
+    description:
+      "Cracked passwords and suggested security improvements as a Governance Analyst at Goldman Sachs.",
+    icon: React.createElement(SiUpwork),
+    date: "2023 July - 2024 June",
+  },
+  {
     title: "IBM Full Stack Software Developer - Professional Certification",
+    location: "Islamabad, PK",
+    description:
+      "I completed the IBM Full Stack Software Developer Professional Certification, a 12 course long online certification program that is recommended to take from 3 to 4 months to complete. Built multiple fullstack projects and learned all the critical information required to develop applications.",
+    icon: React.createElement(SiIbm),
+    date: "",
+  },
+  {
+    title: "IBM DevOps and Software Engineering - Professional Certification",
     location: "Islamabad, PK",
     description:
       "I completed the IBM Full Stack Software Developer Professional Certification, a 12 course long online certification program that is recommended to take from 3 to 4 months to complete. Built multiple fullstack projects and learned all the critical information required to develop applications.",
@@ -150,4 +184,9 @@ export const skillsData = [
   "Flask",
   "Framer Motion",
   "Go",
+  "Docker",
+  "Kubernetes",
+  "Azure",
+  "GCP",
+  "AWS",
 ] as const;

@@ -71,9 +71,12 @@ export default function Intro() {
         <h1 className="text-stone-100 text-2xl sm:text-3xl !leading-[1.5] m-4">
           <Bold>Hey there! I'm Suhaib.</Bold>
           <br />
-          I'm an <Bold>IBM™ Certified Fullstack Developer.</Bold>
+          I'm an{" "}
+          <Bold>
+            IBM™ Certified Fullstack Developer and DevOps Software Engineer.
+          </Bold>
           <br />I <Italic>build, innovate, and solve</Italic> business problems
-          using <Underline>AI, NextJS, and React</Underline>.<br />
+          using <Underline>AI, Azure, and React</Underline>.<br />
           <Italic className="text-lg sm:text-xl">
             (Along with any other tools I can{" "}
             <span className="text-nowrap">get my hands-on.</span>)
